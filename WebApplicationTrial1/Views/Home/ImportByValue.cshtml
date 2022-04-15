@@ -1,0 +1,98 @@
+﻿@{ ViewData["Title"] = "ImportByValue"; }
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- <head>
+    <meta charset="utf-8">
+    <title>Imports By Value</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+  </head>
+
+  <body>
+
+    <header class="primary-header container group">
+
+      <h1 class="logo">@ViewBag.title</h1>
+
+      <h3 class="tagline">DIS Assignment 3: Web Look and Feel</h3>
+
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="importsbyvalue.html">Imports Value</a></li>
+          <li><a href="importsbyquantity.html">Imports Quantity</a></li>
+	    <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+
+    </header> -->
+
+    <body>
+
+    <!-- <section class="hero container">
+
+      <h2>Imports by Value (Million $)</h2>
+
+      <p> The table below provides the summary data on annual food imports by value from 2014 - 2017 of the United States</p>
+
+    </section> -->
+
+    <!-- Lead -->
+
+    <section class="row-alt">
+      <div class="lead container">
+
+        <h1>Imports by Value (Million $)</h1>
+
+        <p> The table below provides the summary data on annual food imports by value from 
+		2014 - 2017 of the United States</p>
+
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="container">
+
+        <table>
+          <thead>
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">College</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Score</th>
+              </tr>
+              </thead>
+              <tbody>
+                @*{
+                        foreach(var item in ViewBag.data)
+                        {
+                            <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.Student.Name</td>
+                            <td>@item.Course.Name</td>
+                            <td>@item.Course.College.Name</td>
+                            <td>@item.Grade</td>
+                            <td>@item.score</td>
+                            </tr>
+                        }
+                    } *@
+              </tbody>
+            
+        </table>
+      </div>
+    </section>
+
+    <footer class="primary-footer container group">
+    <small>DIS Assignment 3: Web Look and Feel <br>By Sumanth Priyesh Bolleddu, Vivek Gollapudi, Sree Pavani Sontham</small>
+    <nav class="nav">
+        <ul>
+          <li><a asp-area="" asp-controller="Home" asp-action="Learnmorewithjs">About the Dataset</a></li>
+        </ul>
+      </nav>    
+</footer>
+
+  </body>
+</html>
